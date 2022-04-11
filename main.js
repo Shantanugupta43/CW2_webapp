@@ -61,6 +61,16 @@ function renderHTML(data){
     }
 
 
+    htmlString += ' and hours ';
+    for(ii = 0; ii < data[i].Module.hours.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.hours[ii];
+      } else {
+        htmlString += " and " + data[i].Module.hours[ii];
+      }
+    }
+
+
 
 
 
