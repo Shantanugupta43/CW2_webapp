@@ -2,14 +2,15 @@ var pageCounter = 1;
 var moduleContainer = document.getElementById('module-info');
 var btn = document.getElementById("btn");
 
+
 btn.addEventListener("click", function(){
   var ourRequest = new XMLHttpRequest();
   ourRequest.open('GET', 'https://raw.githubusercontent.com/profharimohanpandey/CW2/master/module-'+ pageCounter +'.json');
   ourRequest.onload = function(){
     //console.log(ourRequest.responseText);
-    var ourData = JSON.parse(ourRequest.responseText);
+    var data = JSON.parse(ourRequest.responseText);
     //console.log(ourData[0]);
-    renderHTML(ourData);
+    renderHTML(data);
   };
   ourRequest.send();
 pageCounter++;
@@ -19,11 +20,12 @@ if (pageCounter > 3){
 }
 });
 
+
 function renderHTML(data){
   var htmlString = "";
 
   for(i = 0; i < data.length; i++){
-    htmlString += "<p>" + data[i].Name + " is a " + data[i].Course + " has assements "; //".</p>";
+    htmlString += "<p>" + data[i].Course + " is a " + data[i].Name + " programme that has assements "; //".</p>";
     for(ii = 0; ii < data[i].Module.Assignment.length; ii++){
       if (ii == 0){
         htmlString += data[i].Module.Assignment[ii];
@@ -49,6 +51,10 @@ function renderHTML(data){
       }
     }
 
+
+
+
+
     htmlString += ' and weights ';
     for(ii = 0; ii < data[i].Module.weights.length; ii++){
       if (ii == 0){
@@ -59,6 +65,44 @@ function renderHTML(data){
     }
     htmlString += '.</p>';
   }
+
+
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
+  teachingHTML(data);
+
 }
+
+
+
+
+function teachingHTML(data) {
+
+  var htmlString = "";
+
+  for(i = 0; i < data.length; i++){
+    htmlString += "<p>" + data[i].Name + " is a " + data[i].Course + " has assements "; //".</p>";
+    for(ii = 0; ii < data[i].Module.Assignment.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.Assignment[ii];
+      } else {
+        htmlString += " and " + data[i].Module.Assignment[ii];
+      }
+    }
+  }
+
+
+
+    moduleContainer.insertAdjacentHTML('beforeend', htmlString);
+
+
+
+
+
+
+}
+
+
+
+
+

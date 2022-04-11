@@ -6,17 +6,21 @@
       "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
-      "weights":["20%", "80%"]
+      "weights":["20%", "80%"],
+      "credits": ["10", "10"],
+      "hours": ["48", "50"]
     }
   },
   {
     "Name": "Post-Graduate",
     "Course":"Big Data",
     "Module": {
-    "Learning_outcomes":["LO1", "LO2"],
-    "Assignment":["CW1", "CW2"],
-    "Volume":["1000 words", "4000 words"],
-    "weights":["20%", "80%"]
+      "Learning_outcomes":["LO1", "LO2"],
+      "Assignment":["CW1", "CW2"],
+      "Volume":["1000 words", "4000 words"],
+      "weights":["20%", "80%"],
+      "credits": ["10", "10"],
+      "hours": ["48", "50"]
     }
   },
   {
@@ -26,8 +30,11 @@
       "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
       "Volume":["1000 words", "4000 words"],
-      "weights":["20%", "80%"]
+      "weights":["20%", "80%"],
+      "credits": ["10", "10"],
+      "hours": ["48", "50"]
     }
-    
   }
+  
 ]
+
