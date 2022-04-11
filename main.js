@@ -5,7 +5,7 @@ var btn = document.getElementById("btn");
 
 btn.addEventListener("click", function(){
   var ourRequest = new XMLHttpRequest();
-  ourRequest.open('GET', 'https://raw.githubusercontent.com/profharimohanpandey/CW2/master/module-'+ pageCounter +'.json');
+  ourRequest.open('GET', 'https://raw.githubusercontent.com/Shantanugupta43/CW2_webapp/master/module-'+ pageCounter +'.json');
   ourRequest.onload = function(){
     //console.log(ourRequest.responseText);
     var data = JSON.parse(ourRequest.responseText);
@@ -14,7 +14,7 @@ btn.addEventListener("click", function(){
   };
   ourRequest.send();
 pageCounter++;
-if (pageCounter > 3){
+if (pageCounter > 4){
 //btn.classList.add("hide-me");
   btn.disabled = true;
 }
@@ -48,6 +48,15 @@ function renderHTML(data){
         htmlString += data[i].Module.Volume[ii];
       } else {
         htmlString += " and " + data[i].Module.Volume[ii];
+      }
+    }
+
+    htmlString += ' and credits ';
+    for(ii = 0; ii < data[i].Module.credits.length; ii++){
+      if (ii == 0){
+        htmlString += data[i].Module.credits[ii];
+      } else {
+        htmlString += " and " + data[i].Module.credits[ii];
       }
     }
 
