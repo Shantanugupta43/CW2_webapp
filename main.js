@@ -21,6 +21,13 @@ if (pageCounter > 4){
 });
 
 
+
+
+
+
+
+
+
 function renderHTML(data){
   var htmlString = "";
 
@@ -88,30 +95,113 @@ function renderHTML(data){
 
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
-  teachingHTML(data);
+  degreeHTML(data);
+
+}
+
+
+
+function moduleHTML(data) {
+
+  var htmlString = "";
+
+
+
+  for(i = 0; i < data.length; i++){
+    htmlString += "<h2>" + data[i].Course + " - - " + data[i].Name + "</h2>";
+    for(ii = 0; ii < data[i].code.length; ii++){
+      if (ii == 0){
+        htmlString += "<h4> ID: " + data[i].code[ii] + "</h4>"
+
+
+        htmlString += "Module led by: " + data[i].Module.Academic[0];
+        htmlString += "googjhsdgf " + data[i].Module.Academic[0];
+
+
+        
+
+        
+
+        
+      }
+
+    }
+  
+  
+  
+  
+  
+  
+  }
+
+
+
+    moduleContainer.insertAdjacentHTML('beforeend', htmlString);
+
+
+
+
+
 
 }
 
 
 
 
-function teachingHTML(data) {
+
+
+
+function degreeHTML(data) {
 
   var htmlString = "";
 
   htmlString += "<h3>" + "Teaching related activities" + "</h3>";
-  htmlString += "<p>" + "Modules led by " + data[0].Academic;
+  htmlString += "<p>" + "Degree programmes";
 
   for(i = 0; i < data.length; i++){
-    htmlString += "<p>" + data[i].Name + " - - " + data[i].Course + " - - "; //".</p>";
-    for(ii = 0; ii < data[i].Module.Assignment.length; ii++){
+    htmlString += "<p>" + data[i].Course + " - - " + data[i].Name + "</p>";
+    for(ii = 0; ii < data[i].code.length; ii++){
       if (ii == 0){
-        htmlString += data[i].Module.Assignment[ii];
-      } else {
-        htmlString += " and " + data[i].Module.Assignment[ii];
+        htmlString += "<p> ID: " + data[i].code[ii] + "</p>"
+
+
+
+
+
+        
+
+        
+
+        
       }
+
     }
+  
+  
+  
+  
+  
+  
   }
+
+  button = document.createElement('button');
+  button.innerText = 'Click to view modules'
+  button.id = 'mod'
+  button.addEventListener('click', () => {
+    moduleHTML(data);
+  });
+  document.body.appendChild(button)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
