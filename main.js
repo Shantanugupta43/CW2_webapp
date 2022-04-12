@@ -100,7 +100,7 @@ function teachingHTML(data) {
   var htmlString = "";
 
   htmlString += "<h3>" + "Teaching related activities" + "</h3>";
-  htmlString += "<p>" + "Modules led by " + data[i].Academic;
+  htmlString += "<p>" + "Modules led by " + data[0].Academic;
 
   for(i = 0; i < data.length; i++){
     htmlString += "<p>" + data[i].Name + " - - " + data[i].Course + " - - "; //".</p>";
