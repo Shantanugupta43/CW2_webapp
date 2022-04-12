@@ -15,6 +15,7 @@
   {
     "Name": "Post-Graduate",
     "Course":"Big Data",
+    "Academic":"Dr. Hari Mohan Pandey",
     "Module": {
       "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
@@ -27,6 +28,7 @@
   {
     "Name": "Research",
     "Course":"Data Mining",
+    "Academic":"Dr. Hari Mohan Pandey",
     "Module": {
       "Learning_outcomes":["LO1", "LO2"],
       "Assignment":["CW1", "CW2"],
