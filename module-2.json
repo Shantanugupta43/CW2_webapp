@@ -2,7 +2,6 @@
   {
     "Name": "Undergraduate",
     "Course":"Web Development",
-    "Academic":"Dr. Hari Mohan Pandey",
     "code":["W4D7"],
     "learning":"Year 1 you will study a set of modules providing a solid foundation for the second and third years of your degree -- Year 2 covers the theoretical concepts and practical applications of programming for the web in greater depth -- Year 3 offers you the opportunity to expand your skills into mobile applications and games development, usability testing and data analysis.",
     "Module": {
@@ -11,13 +10,13 @@
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
       "credits":["10", "10"],
-      "hours":["48", "50"]
+      "hours":["48", "50"],
+      "Academic":["Dr. Hari Mohan Pandey"]
     }
   },
   {
     "Name": "Post-Graduate",
     "Course":"Big Data",
-    "Academic":"Dr. Hari Mohan Pandey",
     "code":["GI11"],
     "learning":"Gaining an in-depth and systematic knowledge of big data management theories, concepts, methodologies and professional practice, you will develop a systematic and critical understanding of algorithms and programming techniques for processing, storing, analysing, visualising and interpreting data.",
     "Module": {
@@ -26,13 +25,13 @@
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
       "credits":["10", "10"],
-      "hours":["48", "50"]
+      "hours":["48", "50"],
+      "Academic":["Dr. Hari Mohan Pandey"]
     }
   },
   {
     "Name": "Research",
     "Course":"Data Mining",
-    "Academic":"Prof Nik Bessis",
     "code":["AB15"],
     "learning":"The research centre has been formed to support the development of an environment of international excellence in the areas of computer and data science with a particular emphasis on smart data analytics, data representation and visualisation; cyber security; interoperable and interconnected distributed applications and technologies and smart infrastructures; AI and autonomous robotics, telecommunications, IoTs and other disruptive services and technologies.",
     "Module": {
@@ -41,10 +40,12 @@
       "Volume":["1000 words", "4000 words"],
       "weights":["20%", "80%"],
       "credits":["10", "10"],
-      "hours":["48", "50"]
+      "hours":["48", "50"],
+      "Academic":["Dr. Hari Mohan Pandey"]
     }
   }
   
 ]
+
 
 
