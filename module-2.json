@@ -12,7 +12,7 @@
       "credits":["10", "10"],
       "hours":["48", "50"],
       "Academic":["Dr. Hari Mohan Pandey"],
-      "Name":["Data Driven Design ", "Web Application Development", "Mobile Applications and Games Development"]
+      "Name":["Data Driven Design [Year 1] ", "Web Application Development [Year 2] ", "Mobile Applications and Games Development [Year 3] "]
     }
   },
   {
@@ -28,7 +28,7 @@
       "credits":["10", "10"],
       "hours":["48", "50"],
       "Academic":["Dr. Hari Mohan Pandey"],
-      "Name":["Advanced Analytics: Tools and Techniques", "Algorithms for Big Data", "Applications in Big Data"]
+      "Name":["Advanced Analytics: Tools and Techniques [Year 1]", "Algorithms for Big Data [Year 2]"]
     }
   },
   {
@@ -44,8 +44,9 @@
       "credits":["10", "10"],
       "hours":["48", "50"],
       "Academic":["Dr. Hari Mohan Pandey"],
-      "Name":["Cyber-Security", "Smart Data Analytics", "Communication Systems"]
+      "Name":["Cyber-Security [Year 1]", "Smart Data Analytics [Year 2]", "Communication Systems [Year 3] "]
     }
   }
   
 ]
+
