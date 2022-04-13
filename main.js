@@ -111,11 +111,20 @@ function moduleHTML(data) {
     htmlString += "<h2>" + data[i].Course + " - - " + data[i].Name + "</h2>";
     for(ii = 0; ii < data[i].code.length; ii++){
       if (ii == 0){
-        htmlString += "<h4> ID: " + data[i].code[ii] + "</h4>"
+        htmlString += "<h4> ID: " + data[i].code[ii] + "</h4>";
 
 
         htmlString += "Module led by: " + data[i].Module.Academic[0];
-        htmlString += "googjhsdgf " + data[i].Module.Academic[0];
+        htmlString += "<ul><li>" + data[i].Module.Name[0] + "</li>";
+        htmlString += "<li>" + data[i].Module.Name[1] + "</li>";
+        htmlString += "<li>" + data[i].Module.Name[2] + "</li></ul>";
+
+        htmlString += `<p><form>
+        <label for="fname">Add Module Name:</label><p>
+        <input type="text" id="fname" name="fname">
+        <input type="submit" value="Submit">`;
+
+
 
 
         
@@ -159,10 +168,11 @@ function degreeHTML(data) {
   htmlString += "<p>" + "Degree programmes";
 
   for(i = 0; i < data.length; i++){
-    htmlString += "<p>" + data[i].Course + " - - " + data[i].Name + "</p>";
+    htmlString += "<p>" + data[i].Course + " - - " + data[i].Name + " - - ";
     for(ii = 0; ii < data[i].code.length; ii++){
       if (ii == 0){
-        htmlString += "<p> ID: " + data[i].code[ii] + "</p>"
+        htmlString += " ID: " + data[i].code[ii];
+        htmlString += "<p> Learning outcome: " + data[i].learning[0];
 
 
 
