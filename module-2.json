@@ -13,9 +13,9 @@
       "hours":["48", "50"],
       "Academic":["Dr. Hari Mohan Pandey"],
       "Name":["Data Driven Design [Year 1] ", "Web Application Development [Year 2] ", "Mobile Applications and Games Development [Year 3] "],
-      "Time_table_name1":["Monday 10:00-12:00", "Tuesday  9:00-10:00  14:00-16:00", "Thursday  9:00-12:00"],
-      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30", "Wednesday 9:00-11:00", "Friday 12:00 - 15:00"],
-      "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30", "Thursday 14:00-16:00", "Friday 15:30 - 17:30 "]
+      "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00  Thursday  9:00-12:00"],
+      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30   Wednesday 9:00-11:00  Friday 12:00 - 15:00"],
+      "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30  Thursday 14:00-16:00  Friday 15:30 - 17:30 "]
     }
   },
   {
@@ -32,9 +32,9 @@
       "hours":["48", "50"],
       "Academic":["Dave Walsh"],
       "Name":["Advanced Analytics: Tools and Techniques [Year 1]", "Algorithms for Big Data [Year 2]"," .. "],
-      "Time_table_name1":["Monday 10:00-12:00", "Tuesday  9:00-10:00  14:00-16:00", "Thursday  9:00-12:00"],
-      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30", "Wednesday 9:00-11:00", "Friday 12:00 - 15:00"],
-      "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30", "Thursday 14:00-16:00", "Friday 15:30 - 17:30 "]
+      "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00  Thursday  9:00-12:00"],
+      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30   Wednesday 9:00-11:00  Friday 12:00 - 15:00"],
+      "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30  Thursday 14:00-16:00  Friday 15:30 - 17:30 "]
     }
   },
   {
@@ -51,9 +51,9 @@
       "hours":["48", "50"],
       "Academic":["Mohammad Awais"],
       "Name":["Cyber-Security [Year 1]", "Smart Data Analytics [Year 2]", "Communication Systems [Year 3] "],
-      "Time_table_name1":["Monday 10:00-12:00", "Tuesday  9:00-10:00  14:00-16:00", "Thursday  9:00-12:00"],
-      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30", "Wednesday 9:00-11:00", "Friday 12:00 - 15:00"],
-      "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30", "Thursday 14:00-16:00", "Friday 15:30 - 17:30 "]
+      "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00  Thursday  9:00-12:00"],
+      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30   Wednesday 9:00-11:00  Friday 12:00 - 15:00"],
+      "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30  Thursday 14:00-16:00  Friday 15:30 - 17:30 "]
     }
   }
   
