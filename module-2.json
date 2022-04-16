@@ -33,8 +33,7 @@
       "Academic":["Dave Walsh"],
       "Name":["Advanced Analytics: Tools and Techniques [Year 1]", "Algorithms for Big Data [Year 2]"," .. "],
       "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00  Thursday  9:00-12:00"],
-      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30   Wednesday 9:00-11:00  Friday 12:00 - 15:00"],
-      "Time_table_name3":["Not Available"]
+      "Time_table_name2":["Monday 14:00-15:00  16:00-17:30   Wednesday 9:00-11:00  Friday 12:00 - 15:00"]
     }
   },
   {
