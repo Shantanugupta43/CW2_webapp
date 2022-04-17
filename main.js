@@ -1,7 +1,8 @@
 var pageCounter = 1;
 var moduleContainer = document.getElementById('module-info');
 var btn = document.getElementById("btn");
-var addinglist = document.getElementById("addlist")
+var addinglist = document.getElementById("addlist");
+var setdaebutton = document.getElementById("setdate");
 
 
 btn.addEventListener("click", function(){
@@ -116,12 +117,23 @@ function moduleHTML(data) {
 
 
         htmlString += "Module led by: " + data[i].Module.Academic[0];
-        htmlString += "<ul><li>" + data[i].Module.Name[0] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name1[0] + "</li></ul>";
-        htmlString += "<ul><li>" + data[i].Module.Name[1] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name2[0] + "</li></ul>";
-        htmlString += "<ul><li>" + data[i].Module.Name[2] +  "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name3[0] + "</li></ul>";
-        
+        htmlString += "<ul><li>" + data[i].Module.Name[0] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name1[0] + "<p> Schedule" + data[i].Module.Assignment[0] +  `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> ` + "</p>" + "<p> Schedule " + data[i].Module.Assignment[1] + `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> <button id = "setdate"> Set date </button>` + "</li></ul>";
+        htmlString += "<ul><li>" + data[i].Module.Name[1] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name2[0] + "<p> Schedule" + data[i].Module.Assignment[0] +  `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> ` +"</p>" + "<p> Schedule " + data[i].Module.Assignment[1] + `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> <button id = "setdate"> Set date </button>` + "</li></ul>";
+        htmlString += "<ul><li>" + data[i].Module.Name[2] +  "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name3[0]  + "<p> Schedule" + data[i].Module.Assignment[0] +  `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> ` + "</p>" + "<p> Schedule " + data[i].Module.Assignment[1] + `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> <button id = "setdate"> Set date </button>` + "</li></ul>";
+
+        setdateb = document.createElement('button');
+        setdateb.innerText = 'Set dates'
+        setdateb.id = 'date'
+        setdateb.addEventListener('click', () => {
+          alert("hello");
+            
+        });
+        document.body.appendChild(setdateb)
 
 
+
+
+      
 
 
 
@@ -142,8 +154,9 @@ function moduleHTML(data) {
       }
 
     }
-  
 
+    
+        
   
   
   
@@ -172,6 +185,9 @@ function moduleHTML(data) {
       
   });
   document.body.appendChild(b)
+
+
+
 
 
 
@@ -321,6 +337,10 @@ function adddegreeHTML() {
 
 
 }
+
+
+
+
 
 function storedegreeHTML() {
 
