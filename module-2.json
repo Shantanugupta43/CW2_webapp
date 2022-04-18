@@ -16,7 +16,7 @@
       "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00  Thursday  9:00-12:00"],
       "Time_table_name2":["Monday 14:00-15:00  16:00-17:30   Wednesday 9:00-11:00  Friday 12:00 - 15:00"],
       "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30  Thursday 14:00-16:00  Friday 15:30 - 17:30"],
-      "awards":["UK Certificate of Higher Education (UK CertHE)","UK Diploma of Higher Education (UK DipHE)"]
+      "awards":["UK Certificate of Higher Education (UK CertHE)","UK Diploma of Higher Education (UK DipHE)","UK Associate of Arts Degree in General Studies"]
     }
   },
   {
@@ -36,7 +36,7 @@
       "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00  Thursday  9:00-12:00"],
       "Time_table_name2":["Monday 14:00-15:00  16:00-17:30  Wednesday 9:00-11:00  Friday 12:00 - 15:00"],
       "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30 Thursday 14:00-16:00  Friday 15:30 - 17:30 "],
-      "awards":["UK Postgraduate Certificate (UK PGCert)","UK Postgraduate Diploma (UK PGDip)"]
+      "awards":["UK Postgraduate Certificate (UK PGCert)","UK Postgraduate Diploma (UK PGDip)","UK Associate of Arts Degree in General Studies"]
     }
   },
   {
@@ -56,7 +56,7 @@
       "Time_table_name1":["Monday 10:00-12:00  Tuesday  9:00-10:00  14:00-16:00   Thursday  9:00-12:00"],
       "Time_table_name2":["Monday 14:00-15:00  16:00-17:30  Wednesday 9:00-11:00   Friday 12:00 - 15:00"],
       "Time_table_name3":["Tuesday 14:00-15:00  16:00-17:30  Thursday 14:00-16:00  Friday 15:30 - 17:30 "],
-      "awards":["UK Postgraduate Certificate (UK PGCert)","UK Postgraduate Diploma (UK PGDip)"]
+      "awards":["UK Postgraduate Certificate (UK PGCert)","UK Postgraduate Diploma (UK PGDip)","UK Associate of Arts Degree in General Studies"]
     }
   }
   
