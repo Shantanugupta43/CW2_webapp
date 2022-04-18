@@ -493,7 +493,7 @@ function moduletimechange(){
   <option value="mob">Mobile Applications and Games Development</option>
   <option value="advance">Advanced Analytics: Tools and Techniques</option>
   <option value="algo">Algorithms for Big Data</option>
-  <option value="..">..</option>
+  <option value="visual">Data Visual</option>
   <option value="cyber">Cyber-Security</option>
   <option value="smart">Smart Data Analytics</option>
   <option value="com">Communication Systems</option>
