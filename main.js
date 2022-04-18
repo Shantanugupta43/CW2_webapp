@@ -117,18 +117,10 @@ function moduleHTML(data) {
 
 
         htmlString += "Module led by: " + data[i].Module.Academic[0];
-        htmlString += "<ul><li>" + data[i].Module.Name[0] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name1[0] + "<p> Schedule" + data[i].Module.Assignment[0] +  `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> ` + "</p>" + "<p> Schedule " + data[i].Module.Assignment[1] + `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> <button id = "setdate"> Set date </button>` + "</li></ul>";
-        htmlString += "<ul><li>" + data[i].Module.Name[1] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name2[0] + "<p> Schedule" + data[i].Module.Assignment[0] +  `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> ` +"</p>" + "<p> Schedule " + data[i].Module.Assignment[1] + `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> <button id = "setdate"> Set date </button>` + "</li></ul>";
-        htmlString += "<ul><li>" + data[i].Module.Name[2] +  "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name3[0]  + "<p> Schedule" + data[i].Module.Assignment[0] +  `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> ` + "</p>" + "<p> Schedule " + data[i].Module.Assignment[1] + `    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"> <button id = "setdate"> Set date </button>` + "</li></ul>";
+        htmlString += "<ul><li>" + data[i].Module.Name[0] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name1[0] + "<p> Schedule" + data[i].Module.Assignment[0] +  `<form action = "formonloadsetdate.html"><input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"><input type ="submit"></input></form>` + "<p> Schedule " + data[i].Module.Assignment[1] + `<form action = "formonloadsetdate.html"><input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"><input type ="submit"></input></form>` + "</li></ul>";
+        htmlString += "<ul><li>" + data[i].Module.Name[1] + "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name2[0] + "<p> Schedule" + data[i].Module.Assignment[0] +  ` <form action = "formonloadsetdate.html"><input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"><input type ="submit"></input></form>`+ "<p> Schedule " + data[i].Module.Assignment[1] + `<form action = "formonloadsetdate.html"><input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"><input type ="submit"></input></form>` + "</li></ul>";
+        htmlString += "<ul><li>" + data[i].Module.Name[2] +  "<p> Module Time Slots Each week: </p>" + data[i].Module.Time_table_name3[0]  + "<p> Schedule" + data[i].Module.Assignment[0] +  `<form action = "formonloadsetdate.html"><input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"><input type ="submit"></input></form>` + "<p> Schedule " + data[i].Module.Assignment[1] + `<form action = "formonloadsetdate.html"><input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"><input type ="submit"></input></form>` + "</li></ul>";
 
-        setdateb = document.createElement('button');
-        setdateb.innerText = 'Set dates'
-        setdateb.id = 'date'
-        setdateb.addEventListener('click', () => {
-          alert("hello");
-            
-        });
-        document.body.appendChild(setdateb)
 
 
 
@@ -190,6 +182,20 @@ function moduleHTML(data) {
 
 
 
+  modtimes = document.createElement('button');
+  modtimes.innerText = 'Change module timings'
+  modtimes.id = 'modtimes'
+  modtimes.addEventListener('click', () => {
+    moduletimechange();
+      
+  });
+  document.body.appendChild(modtimes)
+
+
+
+
+
+
 
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
@@ -237,6 +243,21 @@ function degreeHTML(data) {
       }
 
     }
+  
+  
+  
+  
+  
+  
+  }
+
+
+  htmlString += "<h3> Exit Awards</h3>";
+  for(i = 0; i < data.length; i++){
+    htmlString += "<ul><li>" + data[i].Module.awards[0] + "</li></ul>";
+    htmlString += "<ul><li>" + data[i].Module.awards[1] + "</li></ul>";
+    htmlString += "<ul><li>" + data[i].Module.awards[2] + "</li></ul>";
+
   
   
   
@@ -441,6 +462,44 @@ function storenewmodulesHTML() {
 
 
 
+
+
+
+
+
+
+
+    moduleContainer.insertAdjacentHTML('beforeend', htmlString);
+
+
+
+
+
+
+}
+
+
+function moduletimechange(){
+
+  var htmlString = "";
+
+  htmlString += "<h3>" + "Change module timings" + "</h3>";
+
+  htmlString += `<p>Change module timings</p><p><form action = "formonloadmodulebutton.html">
+  <label for = "course">Choose a Current Module: </label>
+  <select id="course" name="course">
+  <option value="datadriven">Data Driven Design</option>
+  <option value="web">Web Application Development</option>
+  <option value="mob">Mobile Applications and Games Development</option>
+  <option value="advance">Advanced Analytics: Tools and Techniques</option>
+  <option value="algo">Algorithms for Big Data</option>
+  <option value="..">..</option>
+  <option value="cyber">Cyber-Security</option>
+  <option value="smart">Smart Data Analytics</option>
+  <option value="com">Communication Systems</option>
+  </select></p>
+  <p><input type="text" id = "timechange"> Enter Day of the Week and the timing </input></p>
+  <input type ="submit"></input></form>`;
 
 
 
