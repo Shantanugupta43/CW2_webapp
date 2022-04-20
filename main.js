@@ -1,7 +1,7 @@
 var pageCounter = 1;
 var moduleContainer = document.getElementById('module-info');
 var btn = document.getElementById("btn");
-var addinglist = document.getElementById("addlist");
+
 var setdaebutton = document.getElementById("setdate");
 
 
@@ -221,7 +221,7 @@ function degreeHTML(data) {
 
   var htmlString = "";
 
-  htmlString += "<h3>" + "Teaching related activities" + "</h3>";
+
   htmlString += "<p>" + "Degree programmes";
 
   for(i = 0; i < data.length; i++){
